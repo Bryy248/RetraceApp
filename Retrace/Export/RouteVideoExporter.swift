@@ -39,9 +39,11 @@ struct RouteVideoExporter {
         let coords = route.coordinates
         guard coords.count >= 2 else { throw ExportError.notEnoughPoints }
 
+        let drawCoords = downsample(coords, maxPoints: 1500)   // ⭐ tambah baris ini
+
         // 1. Snapshot the base map once, fitting the whole route.
-        let base = try await snapshot(for: coords)
-        let points = coords.map { base.point(for: $0) }
+        let base = try await snapshot(for: drawCoords)          // ⭐ coords → drawCoords
+        let points = drawCoords.map { base.point(for: $0) }     // ⭐ coords → drawCoords
 
         // 2. Set up the writer.
         let url = FileManager.default.temporaryDirectory
@@ -136,6 +138,14 @@ struct RouteVideoExporter {
         let span = MKCoordinateSpan(latitudeDelta: max((maxLat - minLat) * 1.4, 0.01),
                                     longitudeDelta: max((maxLng - minLng) * 1.4, 0.01))
         return MKCoordinateRegion(center: center, span: span)
+    }
+    
+    private func downsample(_ coords: [CLLocationCoordinate2D], maxPoints: Int) -> [CLLocationCoordinate2D] {
+        guard coords.count > maxPoints else { return coords }
+        let stride = coords.count / maxPoints
+        return coords.enumerated()
+            .filter { $0.offset % stride == 0 }
+            .map { $0.element }
     }
 
     // MARK: - Per-frame drawing

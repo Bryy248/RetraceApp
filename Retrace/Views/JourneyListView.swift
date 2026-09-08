@@ -68,7 +68,7 @@ private struct JourneyRow: View {
         VStack(alignment: .leading, spacing: 3) {
             Text(journey.name)
                 .font(.body)
-            Text("\(journey.periodText) · \(journey.route.visits.count) tempat")
+            Text(journey.periodText)
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
