@@ -5,6 +5,8 @@ struct JourneyListView: View {
     @Environment(\.modelContext) private var context
     @Query(sort: \Journey.createdAt, order: .reverse) private var journeys: [Journey]
     @State private var showingAdd = false
+    // sementara
+    @State private var showingRecordingPOC = false
 
     var body: some View {
         NavigationStack {
@@ -33,6 +35,12 @@ struct JourneyListView: View {
             }
             .navigationTitle("Perjalanan")
             .toolbar {
+                // ⚠️ TEMP: buka POC perekaman Story C. Hapus setelah UI perekaman asli jadi.
+                ToolbarItem(placement: .topBarLeading) {
+                    Button { showingRecordingPOC = true } label: {
+                        Image(systemName: "location.magnifyingglass")
+                    }
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button { showingAdd = true } label: {
                         Image(systemName: "plus")
@@ -41,6 +49,9 @@ struct JourneyListView: View {
             }
             .sheet(isPresented: $showingAdd) {
                 AddJourneyView()
+            }
+            .sheet(isPresented: $showingRecordingPOC) {
+                LocationRecordingDebugView()
             }
         }
     }
