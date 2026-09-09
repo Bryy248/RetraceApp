@@ -50,6 +50,25 @@ final class LocationRecordingService: NSObject {
         manager.activityType = .otherNavigation // jenis aktivitas
     }
     
+    // penanda user sedang ingin mengaktifkan izin Always
+    private var pursuingAlways = false
+    
+    // dipanggil saat user menggeser toggle ON
+    func enableRecording() {
+        pursuingAlways = true
+        switch authorizationStatus {
+        case .notDetermined:
+            requestWhenInUse() // belum ada izin -> request izin when in use
+        case .authorizedWhenInUse:
+            requestAlways() // kalau when in use -> request always
+        case .authorizedAlways:
+            start() // kalau udah always start
+        default:
+            pursuingAlways = false
+        }
+    }
+
+    
     // untuk melihat status perizinan dari user saat ini
     var authorizationStatus: CLAuthorizationStatus {
         manager.authorizationStatus
@@ -139,7 +158,19 @@ extension LocationRecordingService: CLLocationManagerDelegate {
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        if getActive() {beginUpdates()}
+        if pursuingAlways {
+            switch authorizationStatus {
+            case .authorizedWhenInUse:
+                requestAlways() // baru dapat when in use, request always
+            case .authorizedAlways:
+                pursuingAlways = false // sudah alway, pengejaran selesai
+                start()
+            case .denied, .restricted:
+                pursuingAlways = false // ditolak -> berhenti mengejar
+            default:
+                break
+            }
+        }
         onChange?()
     }
     

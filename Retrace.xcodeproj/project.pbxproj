@@ -22,6 +22,8 @@
 		DBD5A0A5304D71CB00CD8582 /* LocationRecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0A4304D71C000CD8582 /* LocationRecordingViewModel.swift */; };
 		DBD5A0A7304D809B00CD8582 /* LocationRecordingDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0A6304D809B00CD8582 /* LocationRecordingDebugView.swift */; };
 		DBD5A0A9304FEB3900CD8582 /* RecordingToJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0A8304FEB3300CD8582 /* RecordingToJourney.swift */; };
+		DBD5A0B030513CDE00CD8582 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0AF30513CDE00CD8582 /* RecordingView.swift */; };
+		DBD5A0B230514A2D00CD8582 /* DailyRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0B130514A2800CD8582 /* DailyRecording.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,17 +42,11 @@
 		DBD5A0A4304D71C000CD8582 /* LocationRecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingViewModel.swift; sourceTree = "<group>"; };
 		DBD5A0A6304D809B00CD8582 /* LocationRecordingDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingDebugView.swift; sourceTree = "<group>"; };
 		DBD5A0A8304FEB3300CD8582 /* RecordingToJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingToJourney.swift; sourceTree = "<group>"; };
+		DBD5A0AF30513CDE00CD8582 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		DBD5A0B130514A2800CD8582 /* DailyRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecording.swift; sourceTree = "<group>"; };
 		F05B502A155AC014365BB3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FC12D1801A9968F1CCC126F1 /* JourneyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		DBD5A0AA3050111300CD8582 /* Component */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Component;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXGroup section */
 		08841C64335A2AC8A202E4DD /* Parsing */ = {
@@ -81,6 +77,7 @@
 		5A58EE4B0B141BF07ED237AE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBD5A0B130514A2800CD8582 /* DailyRecording.swift */,
 				241B228AD2FCA0186FF8F4DB /* Journey.swift */,
 				DBD5A09C3049BAAB00CD8582 /* RecordedLocation.swift */,
 			);
@@ -102,10 +99,10 @@
 		9F34B5867271C9FB8C8492C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DBD5A0AA3050111300CD8582 /* Component */,
 				7C7A5278A6B2FC50B32650F1 /* AddJourneyView.swift */,
 				CEFE4A5E0659AC4D963348FD /* JourneyListView.swift */,
 				FC12D1801A9968F1CCC126F1 /* JourneyMapView.swift */,
+				DBD5A0AF30513CDE00CD8582 /* RecordingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,9 +143,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				DBD5A0AA3050111300CD8582 /* Component */,
 			);
 			name = Retrace;
 			packageProductDependencies = (
@@ -218,9 +212,11 @@
 				DBD5A0A5304D71CB00CD8582 /* LocationRecordingViewModel.swift in Sources */,
 				2F9D95B8D6199CA648A052A0 /* RetraceApp.swift in Sources */,
 				03863E642C4407E3015E8A6F /* RouteVideoExporter.swift in Sources */,
+				DBD5A0B030513CDE00CD8582 /* RecordingView.swift in Sources */,
 				DBD5A09F3049C13F00CD8582 /* AppContainer.swift in Sources */,
 				C802D61F848156F3C462BA35 /* TimelineParser.swift in Sources */,
 				DBD5A09D3049BAB600CD8582 /* RecordedLocation.swift in Sources */,
+				DBD5A0B230514A2D00CD8582 /* DailyRecording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

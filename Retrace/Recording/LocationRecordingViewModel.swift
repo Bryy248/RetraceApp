@@ -92,6 +92,14 @@ final class LocationRecordingViewModel {
         authorizationStatus != .authorizedAlways
     }
     
+    func enableRecording(){
+        service.enableRecording(); refresh()
+    }
+    
+    func disableRecording(){
+        service.stop(); refresh()
+    }
+    
     // menghitung total distance
     var totalDistance: CLLocationDistance {
         guard samples.count > 1 else {return 0}

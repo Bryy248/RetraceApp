@@ -35,10 +35,16 @@ struct JourneyListView: View {
             }
             .navigationTitle("Perjalanan")
             .toolbar {
-                // ⚠️ TEMP: buka POC perekaman Story C. Hapus setelah UI perekaman asli jadi.
-                ToolbarItem(placement: .topBarLeading) {
-                    Button { showingRecordingPOC = true } label: {
-                        Image(systemName: "location.magnifyingglass")
+//                ToolbarItem(placement: .topBarLeading) {
+//                    Button { showingRecordingPOC = true } label: {
+//                        Image(systemName: "location.magnifyingglass")
+//                    }
+//                }
+                ToolbarItem(placement: .topBarLeading){
+                    NavigationLink {
+                        RecordingView()
+                    } label: {
+                        Image(systemName: "location")
                     }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
