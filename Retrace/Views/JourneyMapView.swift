@@ -13,6 +13,10 @@ struct JourneyMapView: View {
     @State private var exportProgress = 0.0
     @State private var exported: ExportedVideo?
     @State private var exportError: String?
+    
+    private let secondsPerKm = 3.0
+    private let minDuration = 3.0
+    private let maxDuration = 30.0
 
     private var route: RouteData { journey.route }
     private var coords: [CLLocationCoordinate2D] { route.coordinates }
@@ -23,7 +27,7 @@ struct JourneyMapView: View {
                 .font(.headline)
                 .padding(.vertical, 10)
 
-            RoutePlaybackMap(allCoords: coords, visibleCount: revealCount)
+            RoutePlaybackMap(allCoords: displayCoords, visibleCount: revealCount, isPlaying: isPlaying)
 
             Text(journey.periodText)
                 .font(.subheadline)
@@ -49,7 +53,7 @@ struct JourneyMapView: View {
                 ExportingOverlay(progress: exportProgress)
             }
         }
-        .onAppear { revealCount = coords.count }   // full route when idle
+        .onAppear { revealCount = displayCoords.count }
         .onDisappear { playTask?.cancel() }
         .sheet(item: $exported) { video in
             ActivityView(items: [video.url])
@@ -59,6 +63,32 @@ struct JourneyMapView: View {
         } message: {
             Text(exportError ?? "")
         }
+    }
+    private var displayCoords: [CLLocationCoordinate2D] {
+        let maxPoints = 1500
+        guard coords.count > maxPoints else { return coords }
+        let stride = coords.count / maxPoints
+        return coords.enumerated()
+            .filter { $0.offset % stride == 0 }
+            .map { $0.element }
+    }
+    
+    private var totalDistanceMeters: CLLocationDistance {
+        let pts = displayCoords
+        guard pts.count > 1 else { return 0 }
+        var total: CLLocationDistance = 0
+        for i in 1..<pts.count {
+            let a = CLLocation(latitude: pts[i-1].latitude, longitude: pts[i-1].longitude)
+            let b = CLLocation(latitude: pts[i].latitude, longitude: pts[i].longitude)
+            total += b.distance(from: a)
+        }
+        return total
+    }
+    
+    private var playbackDuration: Double {
+        let km = totalDistanceMeters / 1000
+        let raw = km * secondsPerKm            // proporsional: makin jauh, makin lama
+        return min(max(raw, minDuration), maxDuration)   // jepit ke [min, max]
     }
 
     // MARK: - Playback
@@ -73,12 +103,15 @@ struct JourneyMapView: View {
     }
 
     private func play() {
-        guard coords.count >= 2 else { return }
+        guard displayCoords.count >= 2 else { return }
         isPlaying = true
 
-        let total = coords.count
-        let steps = min(total, 120)                 // cap frames so each one renders
-        let frameDelay: UInt64 = 60_000_000         // 60ms per step (~7s total)
+        let dist = totalDistanceMeters
+        
+        let total = displayCoords.count
+        let steps = min(total, 120)
+        let duration = playbackDuration
+        let frameDelay = UInt64((duration / Double(steps)) * 1_000_000_000)
 
         revealCount = 0
         playTask = Task {
@@ -103,7 +136,8 @@ struct JourneyMapView: View {
 
         Task {
             do {
-                let exporter = RouteVideoExporter()
+                var exporter = RouteVideoExporter()
+                exporter.duration = playbackDuration
                 let url = try await exporter.export(
                     title: journey.name,
                     periodText: journey.periodText,
@@ -129,6 +163,8 @@ struct JourneyMapView: View {
 struct RoutePlaybackMap: UIViewRepresentable {
     let allCoords: [CLLocationCoordinate2D]
     var visibleCount: Int
+    
+    var isPlaying: Bool
 
     func makeCoordinator() -> Coordinator { Coordinator() }
 

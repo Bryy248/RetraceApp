@@ -3,105 +3,129 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05F67724658C479C0FFCF212 /* AddJourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E28961B884AC833A4FDAB /* AddJourneyView.swift */; };
-		0A08A73467D0AE8305FB79C9 /* RetraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9092B7D8462236A0EF789E51 /* RetraceApp.swift */; };
-		0BD95F53FF8B85654CA43BAD /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D66BC0E21E913B23AEBAB /* Journey.swift */; };
-		0C16C72853099A8001628F48 /* TimelineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EC87A6FFFC840BC1078153 /* TimelineParser.swift */; };
-		128E48BB84AB39DC0B3B7A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39136848F160605E47D50D8C /* Assets.xcassets */; };
-		3A0B6AD1DEAE004F8917A8D0 /* CoordinateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E33BFAD3B44E37ADF5ECF1 /* CoordinateParser.swift */; };
-		3F90EED5B7510584E103A7FD /* JourneyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBF96AE18FF1A9E145D9EC /* JourneyMapView.swift */; };
-		EE5049EDDD8FA1299ADFD65F /* JourneyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA73494E5F9C1826537D98 /* JourneyListView.swift */; };
-		F4B87BE2A29807669B014966 /* RouteVideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B0BAA09A7E45EE2A063902 /* RouteVideoExporter.swift */; };
+		03863E642C4407E3015E8A6F /* RouteVideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5142BB036429F57BDB8708 /* RouteVideoExporter.swift */; };
+		27790E19AE6BA1E81675B9BC /* AddJourneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A5278A6B2FC50B32650F1 /* AddJourneyView.swift */; };
+		2F9D95B8D6199CA648A052A0 /* RetraceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84160B349AD59443F5FF7727 /* RetraceApp.swift */; };
+		327EACAC0FF2A5390EC7FDAA /* JourneyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12D1801A9968F1CCC126F1 /* JourneyMapView.swift */; };
+		4AEDA29DDAA6FFB66478D33F /* JourneyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFE4A5E0659AC4D963348FD /* JourneyListView.swift */; };
+		5D24B7A237DD6C9A8D3E48BE /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241B228AD2FCA0186FF8F4DB /* Journey.swift */; };
+		5EA72284B4EB07F09528A058 /* CoordinateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1E0974F9729D47D7A97F9C /* CoordinateParser.swift */; };
+		62603FD6C968D92575679E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516D263E2DFC775C39BDE2DC /* Assets.xcassets */; };
+		C802D61F848156F3C462BA35 /* TimelineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BE1666036EF02431F61A72 /* TimelineParser.swift */; };
+		DBD5A09D3049BAB600CD8582 /* RecordedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A09C3049BAAB00CD8582 /* RecordedLocation.swift */; };
+		DBD5A09F3049C13F00CD8582 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A09E3049C13B00CD8582 /* AppContainer.swift */; };
+		DBD5A0A33049D12000CD8582 /* LocationRecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0A23049D11B00CD8582 /* LocationRecordingService.swift */; };
+		DBD5A0A5304D71CB00CD8582 /* LocationRecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0A4304D71C000CD8582 /* LocationRecordingViewModel.swift */; };
+		DBD5A0A7304D809B00CD8582 /* LocationRecordingDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0A6304D809B00CD8582 /* LocationRecordingDebugView.swift */; };
+		DBD5A0A9304FEB3900CD8582 /* RecordingToJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0A8304FEB3300CD8582 /* RecordingToJourney.swift */; };
+		DBD5A0B030513CDE00CD8582 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0AF30513CDE00CD8582 /* RecordingView.swift */; };
+		DBD5A0B230514A2D00CD8582 /* DailyRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5A0B130514A2800CD8582 /* DailyRecording.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16E33BFAD3B44E37ADF5ECF1 /* CoordinateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateParser.swift; sourceTree = "<group>"; };
-		39136848F160605E47D50D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C3D66BC0E21E913B23AEBAB /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
-		3E6E28961B884AC833A4FDAB /* AddJourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJourneyView.swift; sourceTree = "<group>"; };
-		47AA73494E5F9C1826537D98 /* JourneyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyListView.swift; sourceTree = "<group>"; };
-		9092B7D8462236A0EF789E51 /* RetraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetraceApp.swift; sourceTree = "<group>"; };
-		B8EC87A6FFFC840BC1078153 /* TimelineParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineParser.swift; sourceTree = "<group>"; };
-		BA56B024DAF3D3704562A519 /* Retrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Retrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4B0BAA09A7E45EE2A063902 /* RouteVideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteVideoExporter.swift; sourceTree = "<group>"; };
-		E0CBF96AE18FF1A9E145D9EC /* JourneyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapView.swift; sourceTree = "<group>"; };
+		204419B94452991DA76D0739 /* Retrace.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Retrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		241B228AD2FCA0186FF8F4DB /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		2E5142BB036429F57BDB8708 /* RouteVideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteVideoExporter.swift; sourceTree = "<group>"; };
+		516D263E2DFC775C39BDE2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C7A5278A6B2FC50B32650F1 /* AddJourneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJourneyView.swift; sourceTree = "<group>"; };
+		84160B349AD59443F5FF7727 /* RetraceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetraceApp.swift; sourceTree = "<group>"; };
+		AB1E0974F9729D47D7A97F9C /* CoordinateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateParser.swift; sourceTree = "<group>"; };
+		B8BE1666036EF02431F61A72 /* TimelineParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineParser.swift; sourceTree = "<group>"; };
+		CEFE4A5E0659AC4D963348FD /* JourneyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyListView.swift; sourceTree = "<group>"; };
+		DBD5A09C3049BAAB00CD8582 /* RecordedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedLocation.swift; sourceTree = "<group>"; };
+		DBD5A09E3049C13B00CD8582 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		DBD5A0A23049D11B00CD8582 /* LocationRecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingService.swift; sourceTree = "<group>"; };
+		DBD5A0A4304D71C000CD8582 /* LocationRecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingViewModel.swift; sourceTree = "<group>"; };
+		DBD5A0A6304D809B00CD8582 /* LocationRecordingDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingDebugView.swift; sourceTree = "<group>"; };
+		DBD5A0A8304FEB3300CD8582 /* RecordingToJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingToJourney.swift; sourceTree = "<group>"; };
+		DBD5A0AF30513CDE00CD8582 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		DBD5A0B130514A2800CD8582 /* DailyRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyRecording.swift; sourceTree = "<group>"; };
+		F05B502A155AC014365BB3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FC12D1801A9968F1CCC126F1 /* JourneyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		0A22724EBC1C38BD4B19E896 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
-		15B608420F8985859883C156 /* Models */ = {
+		08841C64335A2AC8A202E4DD /* Parsing */ = {
 			isa = PBXGroup;
 			children = (
-				3C3D66BC0E21E913B23AEBAB /* Journey.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		41C6B4796E5A75A04476538E /* Parsing */ = {
-			isa = PBXGroup;
-			children = (
-				16E33BFAD3B44E37ADF5ECF1 /* CoordinateParser.swift */,
-				B8EC87A6FFFC840BC1078153 /* TimelineParser.swift */,
+				AB1E0974F9729D47D7A97F9C /* CoordinateParser.swift */,
+				B8BE1666036EF02431F61A72 /* TimelineParser.swift */,
 			);
 			path = Parsing;
 			sourceTree = "<group>";
 		};
-		45741866C05A8B4A46E36F42 /* Retrace */ = {
+		354EAB422FB089AB1FD0448B /* Export */ = {
 			isa = PBXGroup;
 			children = (
-				9092B7D8462236A0EF789E51 /* RetraceApp.swift */,
-				15B608420F8985859883C156 /* Models */,
-				41C6B4796E5A75A04476538E /* Parsing */,
-				B0CC986467B1B80F32C4DB92 /* Views */,
-				8B8B358398AA18D584229041 /* Export */,
-				39136848F160605E47D50D8C /* Assets.xcassets */,
-			);
-			path = Retrace;
-			sourceTree = "<group>";
-		};
-		7EC3ECDCD5A1597F5C868632 = {
-			isa = PBXGroup;
-			children = (
-				45741866C05A8B4A46E36F42 /* Retrace */,
-				D2AFB2B69C19FCBEEF10D6C0 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		8B8B358398AA18D584229041 /* Export */ = {
-			isa = PBXGroup;
-			children = (
-				D4B0BAA09A7E45EE2A063902 /* RouteVideoExporter.swift */,
+				2E5142BB036429F57BDB8708 /* RouteVideoExporter.swift */,
 			);
 			path = Export;
 			sourceTree = "<group>";
 		};
-		B0CC986467B1B80F32C4DB92 /* Views */ = {
+		42B7B82E5AFB53F2324F4DDD = {
 			isa = PBXGroup;
 			children = (
-				47AA73494E5F9C1826537D98 /* JourneyListView.swift */,
-				3E6E28961B884AC833A4FDAB /* AddJourneyView.swift */,
-				E0CBF96AE18FF1A9E145D9EC /* JourneyMapView.swift */,
+				CC4E82F396C18D854D15D2D0 /* Retrace */,
+				CF978FDD8CD6071365FC124E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A58EE4B0B141BF07ED237AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBD5A0B130514A2800CD8582 /* DailyRecording.swift */,
+				241B228AD2FCA0186FF8F4DB /* Journey.swift */,
+				DBD5A09C3049BAAB00CD8582 /* RecordedLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79315DFA9FC277D9D8D12215 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				DBD5A0A8304FEB3300CD8582 /* RecordingToJourney.swift */,
+				DBD5A0A4304D71C000CD8582 /* LocationRecordingViewModel.swift */,
+				DBD5A0A23049D11B00CD8582 /* LocationRecordingService.swift */,
+				DBD5A09E3049C13B00CD8582 /* AppContainer.swift */,
+				DBD5A0A6304D809B00CD8582 /* LocationRecordingDebugView.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		9F34B5867271C9FB8C8492C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C7A5278A6B2FC50B32650F1 /* AddJourneyView.swift */,
+				CEFE4A5E0659AC4D963348FD /* JourneyListView.swift */,
+				FC12D1801A9968F1CCC126F1 /* JourneyMapView.swift */,
+				DBD5A0AF30513CDE00CD8582 /* RecordingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D2AFB2B69C19FCBEEF10D6C0 /* Products */ = {
+		CC4E82F396C18D854D15D2D0 /* Retrace */ = {
 			isa = PBXGroup;
 			children = (
-				BA56B024DAF3D3704562A519 /* Retrace.app */,
+				516D263E2DFC775C39BDE2DC /* Assets.xcassets */,
+				F05B502A155AC014365BB3A3 /* Info.plist */,
+				84160B349AD59443F5FF7727 /* RetraceApp.swift */,
+				354EAB422FB089AB1FD0448B /* Export */,
+				5A58EE4B0B141BF07ED237AE /* Models */,
+				08841C64335A2AC8A202E4DD /* Parsing */,
+				79315DFA9FC277D9D8D12215 /* Recording */,
+				9F34B5867271C9FB8C8492C8 /* Views */,
+			);
+			path = Retrace;
+			sourceTree = "<group>";
+		};
+		CF978FDD8CD6071365FC124E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				204419B94452991DA76D0739 /* Retrace.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,150 +133,125 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3E22E337E04B6FE934C01219 /* Retrace */ = {
+		AF9F34808B9230FDF2634141 /* Retrace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65A8BA240D1B541008CCA1F0 /* Build configuration list for PBXNativeTarget "Retrace" */;
+			buildConfigurationList = BB16202495C3FCD1C05899E5 /* Build configuration list for PBXNativeTarget "Retrace" */;
 			buildPhases = (
-				C3DAE6B03019FFC0A291A55F /* Sources */,
-				0A22724EBC1C38BD4B19E896 /* Frameworks */,
-				1213ACFFAEAA75F1A0DB3D07 /* Resources */,
+				7A9DEF4473DEDC3EBD75A111 /* Sources */,
+				80FD70492FAA5B16BA20D27A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Retrace;
+			packageProductDependencies = (
+			);
 			productName = Retrace;
-			productReference = BA56B024DAF3D3704562A519 /* Retrace.app */;
+			productReference = 204419B94452991DA76D0739 /* Retrace.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		78656E0E9C068043DA2F8714 /* Project object */ = {
+		D6309FA43F20E68FB0F36CDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					3E22E337E04B6FE934C01219 = {
-						CreatedOnToolsVersion = 15.0;
+					AF9F34808B9230FDF2634141 = {
+						DevelopmentTeam = BPKZ3792AR;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 82A45DA1C74063AB26967EC7 /* Build configuration list for PBXProject "Retrace" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 6B3AE0C70DC840D0918B9C7B /* Build configuration list for PBXProject "Retrace" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 7EC3ECDCD5A1597F5C868632;
-			productRefGroup = D2AFB2B69C19FCBEEF10D6C0 /* Products */;
+			mainGroup = 42B7B82E5AFB53F2324F4DDD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CF978FDD8CD6071365FC124E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E22E337E04B6FE934C01219 /* Retrace */,
+				AF9F34808B9230FDF2634141 /* Retrace */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1213ACFFAEAA75F1A0DB3D07 /* Resources */ = {
+		80FD70492FAA5B16BA20D27A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				128E48BB84AB39DC0B3B7A22 /* Assets.xcassets in Resources */,
+				62603FD6C968D92575679E67 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C3DAE6B03019FFC0A291A55F /* Sources */ = {
+		7A9DEF4473DEDC3EBD75A111 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A08A73467D0AE8305FB79C9 /* RetraceApp.swift in Sources */,
-				0BD95F53FF8B85654CA43BAD /* Journey.swift in Sources */,
-				3A0B6AD1DEAE004F8917A8D0 /* CoordinateParser.swift in Sources */,
-				0C16C72853099A8001628F48 /* TimelineParser.swift in Sources */,
-				EE5049EDDD8FA1299ADFD65F /* JourneyListView.swift in Sources */,
-				05F67724658C479C0FFCF212 /* AddJourneyView.swift in Sources */,
-				3F90EED5B7510584E103A7FD /* JourneyMapView.swift in Sources */,
-				F4B87BE2A29807669B014966 /* RouteVideoExporter.swift in Sources */,
+				27790E19AE6BA1E81675B9BC /* AddJourneyView.swift in Sources */,
+				5EA72284B4EB07F09528A058 /* CoordinateParser.swift in Sources */,
+				5D24B7A237DD6C9A8D3E48BE /* Journey.swift in Sources */,
+				4AEDA29DDAA6FFB66478D33F /* JourneyListView.swift in Sources */,
+				DBD5A0A33049D12000CD8582 /* LocationRecordingService.swift in Sources */,
+				327EACAC0FF2A5390EC7FDAA /* JourneyMapView.swift in Sources */,
+				DBD5A0A7304D809B00CD8582 /* LocationRecordingDebugView.swift in Sources */,
+				DBD5A0A9304FEB3900CD8582 /* RecordingToJourney.swift in Sources */,
+				DBD5A0A5304D71CB00CD8582 /* LocationRecordingViewModel.swift in Sources */,
+				2F9D95B8D6199CA648A052A0 /* RetraceApp.swift in Sources */,
+				03863E642C4407E3015E8A6F /* RouteVideoExporter.swift in Sources */,
+				DBD5A0B030513CDE00CD8582 /* RecordingView.swift in Sources */,
+				DBD5A09F3049C13F00CD8582 /* AppContainer.swift in Sources */,
+				C802D61F848156F3C462BA35 /* TimelineParser.swift in Sources */,
+				DBD5A09D3049BAB600CD8582 /* RecordedLocation.swift in Sources */,
+				DBD5A0B230514A2D00CD8582 /* DailyRecording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1B86FF7C0C903044E0FE28DD /* Debug */ = {
+		2962222644155F4153C53D8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BPKZ3792AR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Retrace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Brian.Retrace;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B8DE711CC392DD289C55366E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BPKZ3792AR;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Brian.Retrace;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C0F3CF3F7D036BDBF3B01D1B /* Debug */ = {
+		2CF722924BAF60E9BB59B8CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -278,18 +277,20 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BPKZ3792AR;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -298,24 +299,47 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		D32AC8537BE9AA0F7DA03E20 /* Release */ = {
+		CA20AC9461993A81DEC7DA42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Retrace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brian.Retrace;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC89CB2880EDA098A76949FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -341,12 +365,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BPKZ3792AR;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -355,37 +381,39 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65A8BA240D1B541008CCA1F0 /* Build configuration list for PBXNativeTarget "Retrace" */ = {
+		6B3AE0C70DC840D0918B9C7B /* Build configuration list for PBXProject "Retrace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B86FF7C0C903044E0FE28DD /* Debug */,
-				B8DE711CC392DD289C55366E /* Release */,
+				2CF722924BAF60E9BB59B8CA /* Debug */,
+				DC89CB2880EDA098A76949FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		82A45DA1C74063AB26967EC7 /* Build configuration list for PBXProject "Retrace" */ = {
+		BB16202495C3FCD1C05899E5 /* Build configuration list for PBXNativeTarget "Retrace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0F3CF3F7D036BDBF3B01D1B /* Debug */,
-				D32AC8537BE9AA0F7DA03E20 /* Release */,
+				2962222644155F4153C53D8F /* Debug */,
+				CA20AC9461993A81DEC7DA42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 78656E0E9C068043DA2F8714 /* Project object */;
+	rootObject = D6309FA43F20E68FB0F36CDC /* Project object */;
 }
