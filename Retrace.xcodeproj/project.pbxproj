@@ -26,6 +26,16 @@
 		CAF31D86E445F0236E7873C8 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED98D0BCDDC3BDA22348F1 /* RecordingView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DBD5A0BB3051BF3700CD8582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6309FA43F20E68FB0F36CDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF9F34808B9230FDF2634141;
+			remoteInfo = Retrace;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1AC953A58254F509D2155E5B /* RecordedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordedLocation.swift; sourceTree = "<group>"; };
 		204419B94452991DA76D0739 /* Retrace.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Retrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +52,30 @@
 		B8BE1666036EF02431F61A72 /* TimelineParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineParser.swift; sourceTree = "<group>"; };
 		C4963966579C613F90C4799A /* LocationRecordingDebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingDebugView.swift; sourceTree = "<group>"; };
 		CEFE4A5E0659AC4D963348FD /* JourneyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyListView.swift; sourceTree = "<group>"; };
+		DBD5A0B73051BF3700CD8582 /* RetraceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetraceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05B502A155AC014365BB3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F5FCCDFF21CCD23D664DF8D9 /* LocationRecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingViewModel.swift; sourceTree = "<group>"; };
 		FB25FBEFED7CE25C2C778E41 /* LocationRecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecordingService.swift; sourceTree = "<group>"; };
 		FC12D1801A9968F1CCC126F1 /* JourneyMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DBD5A0B83051BF3700CD8582 /* RetraceTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RetraceTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBD5A0B43051BF3700CD8582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		08841C64335A2AC8A202E4DD /* Parsing */ = {
@@ -70,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				CC4E82F396C18D854D15D2D0 /* Retrace */,
+				DBD5A0B83051BF3700CD8582 /* RetraceTests */,
 				CF978FDD8CD6071365FC124E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				204419B94452991DA76D0739 /* Retrace.app */,
+				DBD5A0B73051BF3700CD8582 /* RetraceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +182,29 @@
 			productReference = 204419B94452991DA76D0739 /* Retrace.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DBD5A0B63051BF3700CD8582 /* RetraceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBD5A0BF3051BF3700CD8582 /* Build configuration list for PBXNativeTarget "RetraceTests" */;
+			buildPhases = (
+				DBD5A0B33051BF3700CD8582 /* Sources */,
+				DBD5A0B43051BF3700CD8582 /* Frameworks */,
+				DBD5A0B53051BF3700CD8582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBD5A0BC3051BF3700CD8582 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DBD5A0B83051BF3700CD8582 /* RetraceTests */,
+			);
+			name = RetraceTests;
+			packageProductDependencies = (
+			);
+			productName = RetraceTests;
+			productReference = DBD5A0B73051BF3700CD8582 /* RetraceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -158,11 +212,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					AF9F34808B9230FDF2634141 = {
 						DevelopmentTeam = BPKZ3792AR;
 						ProvisioningStyle = Automatic;
+					};
+					DBD5A0B63051BF3700CD8582 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = AF9F34808B9230FDF2634141;
 					};
 				};
 			};
@@ -181,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				AF9F34808B9230FDF2634141 /* Retrace */,
+				DBD5A0B63051BF3700CD8582 /* RetraceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,6 +251,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62603FD6C968D92575679E67 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD5A0B53051BF3700CD8582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +287,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBD5A0B33051BF3700CD8582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBD5A0BC3051BF3700CD8582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF9F34808B9230FDF2634141 /* Retrace */;
+			targetProxy = DBD5A0BB3051BF3700CD8582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2962222644155F4153C53D8F /* Debug */ = {
@@ -332,6 +414,66 @@
 			};
 			name = Release;
 		};
+		DBD5A0BD3051BF3700CD8582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPKZ3792AR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brian.RetraceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Retrace";
+			};
+			name = Debug;
+		};
+		DBD5A0BE3051BF3700CD8582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BPKZ3792AR;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brian.RetraceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retrace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Retrace";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		DC89CB2880EDA098A76949FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -409,6 +551,15 @@
 			buildConfigurations = (
 				2962222644155F4153C53D8F /* Debug */,
 				CA20AC9461993A81DEC7DA42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DBD5A0BF3051BF3700CD8582 /* Build configuration list for PBXNativeTarget "RetraceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBD5A0BD3051BF3700CD8582 /* Debug */,
+				DBD5A0BE3051BF3700CD8582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
